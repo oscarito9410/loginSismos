@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/blue_background">
+
+
+   <ImageView
+       android:id="@+id/ivLogoSismos"
+       android:layout_width="250dp"
+       android:layout_height="100dp"
+       android:src="@drawable/ic_header"
+       android:layout_marginTop="50dp"
+       android:layout_centerHorizontal="true"/>
+
+   <EditText
+       android:id="@+id/etUser"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_marginLeft="30dp"
+       android:layout_marginRight="30dp"
+       android:layout_below="@+id/ivLogoSismos"
+       android:layout_marginTop="40dp"
+       android:hint="@string/correo"
+       android:textColorHint="@color/textoNegro"
+       android:textSize="16sp"
+       android:paddingLeft="15dp"
+       android:background="@drawable/shape_login_corner"
+       android:elevation="2dp"/>
+
+   <EditText
+       android:id="@+id/etPassword"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_marginLeft="30dp"
+       android:layout_marginRight="30dp"
+       android:layout_below="@+id/etUser"
+       android:layout_marginTop="10dp"
+       android:hint="@string/contraseña"
+       android:textColorHint="@color/textoNegro"
+       android:inputType="textPassword"
+       android:textSize="16sp"
+       android:paddingLeft="15dp"
+       android:background="@drawable/shape_login_corner"
+       android:elevation="2dp"/>
+
+    <TextView
+        android:id="@+id/tvSesion"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_login_corner"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:text="@string/iniciarSesion"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:elevation="2dp"
+        android:layout_below="@id/etPassword"/>
+
+
+   <TextView
+       android:id="@+id/tvText"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:layout_below="@+id/tvSesion"
+       android:layout_marginTop="15dp"
+       android:text="O"
+       android:textColor="@android:color/white" />
+
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:layout_centerVertical="true"
+       android:layout_marginLeft="30dp"
+       android:layout_marginTop="25dp"
+       android:layout_toLeftOf="@id/tvText"
+       android:layout_below="@+id/tvSesion"
+       android:background="@android:color/white" />
+
+   <View
+       android:id="@+id/view"
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:layout_centerVertical="true"
+       android:layout_marginRight="30dp"
+       android:layout_toRightOf="@id/tvText"
+       android:layout_below="@+id/tvSesion"
+       android:layout_marginTop="25dp"
+       android:background="@android:color/white" />
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:background="@drawable/shape_login_corner_enable"
+       android:layout_marginLeft="30dp"
+       android:layout_marginRight="30dp"
+       android:layout_marginTop="10dp"
+       android:layout_below="@+id/tvText">
+
+      <ImageView
+          android:id="@+id/ivLogoFb"
+          android:layout_width="35dp"
+          android:layout_height="35dp"
+          android:src="@drawable/fb_logo"
+          android:layout_marginLeft="10dp"
+          android:layout_centerVertical="true"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@android:color/white"
+          android:text="@string/sesionFacebook"
+          android:textSize="16sp"
+          android:textStyle="bold"
+          android:layout_toRightOf="@+id/ivLogoFb"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="10dp"/>
+
+
+
+   </RelativeLayout>
+
+   <pl.bclogic.pulsator4droid.library.PulsatorLayout
+       android:id="@+id/pulsator"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_centerInParent="true"
+       app:pulse_count="5"
+       app:pulse_duration="1500"
+       app:pulse_repeat="0"
+       app:pulse_color="@color/rojoSismos"
+       app:pulse_startFromScratch="false"
+       app:pulse_interpolator="Linear">
+   </pl.bclogic.pulsator4droid.library.PulsatorLayout>
+
+   <TextView
+       android:id="@+id/tvTerminos1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_above="@+id/div"
+       android:layout_centerHorizontal="true"
+       android:layout_marginBottom="14dp"
+       android:textSize="12dp"
+       android:layout_marginLeft="40dp"
+       android:layout_marginRight="40dp"
+       android:textColor="@android:color/white"
+       android:textAlignment="center"/>
+
+   <View
+       android:id="@+id/div"
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:background="@android:color/white"
+       android:layout_above="@+id/tvRegistrate"
+       android:layout_marginBottom="10dp"/>
+
+   <TextView
+       android:id="@+id/tvRegistrate"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="12sp"
+       android:text="@string/notienes"
+       android:textColor="@android:color/white"
+       android:layout_alignParentBottom="true"
+       android:layout_centerHorizontal="true"
+       android:layout_marginBottom="15dp"/>
+
+</RelativeLayout>

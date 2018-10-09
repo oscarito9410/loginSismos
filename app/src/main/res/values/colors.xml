@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#283593</color>
+    <color name="colorPrimaryDark">#001064</color>
+    <color name="colorAccent">#5f5fc4</color>
+    <color name="etBackground">#99b1bc</color>
+    <color name="textoNegro">#8f8f8f</color>
+    <color name="cafe">#d38f63</color>
+    <color name="rojoSismos">#90e10c13</color>
+    <color name="blanco">#ffffff</color>
+    <color name="azulTransparente">#60001064</color>
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Login Sismos</string>
+    <string name="correo">Correo eletrónico</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="iniciarSesion">Iniciar Sesión</string>
+    <string name="notienes">¿No tienes una cuenta?   Registrate</string>
+    <string name="sesionFacebook">Iniciar Sesión con Facebook</string>
+    <string name="textoNegritaLegales"><![CDATA[Al acceder aceptas los <b><font color="#008fff"> Términos y condiciones</font></b> así como el <b><font color="#008fff"> aviso de privacidad </font></b>de la aplicación.]]></string>
+
+</resources>
